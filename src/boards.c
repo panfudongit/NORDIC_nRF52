@@ -81,6 +81,8 @@ void board_init(void)
   // Init app timer (use RTC1)
   app_timer_init();
 
+  uart_init();
+
   // Configure Systick for led blinky
   NVIC_SetPriority(SysTick_IRQn, 7);
   SysTick_Config(SystemCoreClock/1000);

@@ -117,6 +117,7 @@ endif
 
 # src
 C_SOURCE_FILES += $(SRC_PATH)/main.c
+C_SOURCE_FILES += $(SRC_PATH)/nrf_uart.c
 C_SOURCE_FILES += $(SRC_PATH)/boards.c
 C_SOURCE_FILES += $(SRC_PATH)/flash_nrf5x.c
 C_SOURCE_FILES += $(SRC_PATH)/dfu_ble_svc.c
@@ -141,6 +142,7 @@ C_SOURCE_FILES += $(SDK11_PATH)/ble/ble_services/ble_dis/ble_dis.c
 
 # Latest SDK files
 C_SOURCE_FILES += $(SDK_PATH)/libraries/timer/app_timer.c
+C_SOURCE_FILES += $(SDK_PATH)/libraries/uart/app_uart.c
 C_SOURCE_FILES += $(SDK_PATH)/libraries/scheduler/app_scheduler.c
 C_SOURCE_FILES += $(SDK_PATH)/libraries/util/app_error.c
 C_SOURCE_FILES += $(SDK_PATH)/libraries/util/app_util_platform.c
@@ -185,6 +187,11 @@ C_SOURCE_FILES += $(TUSB_PATH)/class/custom/custom_device.c
 C_SOURCE_FILES += $(TUSB_PATH)/tusb.c
 
 endif
+C_SOURCE_FILES += $(SDK_PATH)/drivers_nrf/uart/nrf_drv_uart.c
+C_SOURCE_FILES += $(SDK_PATH)/drivers_nrf/common/nrf_drv_common.c
+IPATH += $(SDK11_PATH)/libraries/util
+IPATH += $(SDK_PATH)/drivers_nrf/common
+IPATH += $(SDK_PATH)/drivers_nrf/uart
 
 
 #******************************************************************************
