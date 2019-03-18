@@ -62,6 +62,7 @@ else
 QUIET = @
 endif
 
+GNU_INSTALL_ROOT = /home/dong/WorkGit/gcc-arm-none-eabi-5_4-2016q3/bin/
 GNU_PREFIX = arm-none-eabi
 
 # Toolchain commands

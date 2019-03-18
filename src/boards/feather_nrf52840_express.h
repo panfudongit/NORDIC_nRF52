@@ -43,8 +43,8 @@
 /* LED
  *------------------------------------------------------------------*/
 #define LEDS_NUMBER           2
-#define LED_PRIMARY_PIN       _PINNUM(1, 15)
-#define LED_SECONDARY_PIN     _PINNUM(1, 10)
+#define LED_PRIMARY_PIN       _PINNUM(0, 14)
+#define LED_SECONDARY_PIN     _PINNUM(0, 13)
 #define LED_NEOPIXEL          16
 #define BOARD_RGB_BRIGHTNESS  0x040404
 #define LED_STATE_ON          1
@@ -53,8 +53,8 @@
 /* BUTTON
  *------------------------------------------------------------------*/
 #define BUTTONS_NUMBER        2
-#define BUTTON_1              _PINNUM(0, 15)
-#define BUTTON_2              _PINNUM(0, 19)
+#define BUTTON_1              _PINNUM(1, 1)
+#define BUTTON_2              _PINNUM(1, 2)
 #define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
 
 /*------------------------------------------------------------------*/
